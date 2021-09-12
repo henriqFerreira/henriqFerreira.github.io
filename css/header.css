@@ -1,9 +1,4 @@
-/* Seção um */
-.secOne{
-    /* Dimensões */
-    width: 100%; height: 100vh;
-}
-
+/* Header da seção um */
 .secOne header{
     /* Dimensões */
     width: 100%; height: 10vh;
