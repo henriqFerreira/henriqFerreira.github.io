@@ -1,0 +1,41 @@
+/* Seção um */
+.secOne{
+    /* Dimensões */
+    width: 100%; height: 100vh;
+}
+
+.secOne header{
+    /* Dimensões */
+    width: 100%; height: 10vh;
+    /* Posição */
+    position: relative;
+}
+    .secOne header svg{
+        /* Posição */
+        margin: 5px 0px 0px 15px;
+        float: left;
+    }
+
+    .headerLinks{
+        /* Dimensões */
+        width: 18%;
+        /* Posição */
+        position: absolute;
+        top: 50%; right: -8%;
+        transform: translate(-50%, -50%);
+    }
+        .headerLinks a{
+            /* Posição */
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 12px;
+            /* Estilo */
+            font-size: 1.1em;
+            font-weight: 700;
+            text-decoration: none;
+            color: #E6F5FF;
+        }
+            .headerLinks a svg{
+                /* Posição */
+                margin: auto;
+            }
