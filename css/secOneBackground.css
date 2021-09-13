@@ -18,7 +18,7 @@
     #right{
         stroke-dasharray: 1000;
         stroke-dashoffset: 100;
-        animation: dash 5s linear forwards;
+        animation: dash 3s linear forwards;
     }
 
 .backgroundLeft{
@@ -28,7 +28,7 @@
     #left{
         stroke-dasharray: 1000;
         stroke-dashoffset: 100;
-        animation: dash 5s linear forwards;
+        animation: dash 3s linear forwards;
     }
 
 @keyframes dash {

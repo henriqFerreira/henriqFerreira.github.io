@@ -1,0 +1,55 @@
+.secOneContent{
+    /* Dimensões */
+    width: 45%; height: auto;
+    /* Posição */
+    position: absolute;
+    top: 42%; left: 40%;
+    transform: translate(-50%, -50%);
+    /* Estilo */
+    opacity: 0;
+    /* Animação */
+    animation: appear 2s ease;
+    animation-fill-mode: forwards;
+}
+
+.secOneContent h1{
+    /* Dimensões */
+    margin-bottom: 15px;
+    /* Estilo */
+    color: #A1ACB3;
+    font-size: 1.8em;
+}
+    .secOneContent h1 span{
+        /* Estilo */
+        color: #ABC6C9;
+    }
+
+.contentLine{
+    /* Dimensões */
+    width: 100px; height: 2px;
+    /* Estilo */
+    background: #ABC6C9;
+}
+
+.secOneContent h3{
+    /* Dimensões */
+    margin-top: 15px;
+    /* Estilo */
+    color: #A1ACB3;
+}
+
+.secOneContent p{
+    /* Dimensões */
+    margin-top: 15px;
+    /* Estilo */
+    text-align: justify;
+    font-weight: 500;
+    font-size: 1.15em;
+    color: #A1ACB3;
+}
+
+@keyframes appear {
+    to{
+        opacity: 1;
+    }
+}
