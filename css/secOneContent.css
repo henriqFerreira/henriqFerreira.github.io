@@ -3,10 +3,11 @@
     width: 45%; height: auto;
     /* Posição */
     position: absolute;
-    top: 42%; left: 40%;
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     /* Estilo */
     opacity: 0;
+    text-align: center;
     /* Animação */
     animation: appear 2s ease;
     animation-fill-mode: forwards;
@@ -14,7 +15,7 @@
 
 .secOneContent h1{
     /* Dimensões */
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     /* Estilo */
     color: #A1ACB3;
     font-size: 1.8em;
@@ -25,6 +26,9 @@
     }
 
 .contentLine{
+    /* Posição */
+    position: relative;
+    left: 40%;
     /* Dimensões */
     width: 100px; height: 2px;
     /* Estilo */
@@ -33,18 +37,8 @@
 
 .secOneContent h3{
     /* Dimensões */
-    margin-top: 15px;
+    margin-top: 25px;
     /* Estilo */
-    color: #A1ACB3;
-}
-
-.secOneContent p{
-    /* Dimensões */
-    margin-top: 15px;
-    /* Estilo */
-    text-align: justify;
-    font-weight: 500;
-    font-size: 1.15em;
     color: #A1ACB3;
 }
 
