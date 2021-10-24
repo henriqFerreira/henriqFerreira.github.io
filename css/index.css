@@ -1,0 +1,126 @@
+/* Seção um */
+.secOne{
+    /* Dimensões */
+    width: 100%; height: 100vh;
+    /* Posição */
+    position: fixed;
+    /* Estilo */
+    background-color: #1c1c1c;
+}
+
+    .secOneBackground{
+        /* Dimensões */
+        width: 100%; height: 100%;
+        /* Posição */
+        position: absolute;
+    }
+
+    .backgroundRight{
+        /* Posição */
+        float: right;
+    }
+        #right{
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 100;
+            animation: dash 3s linear forwards;
+        }
+
+    .backgroundLeft{
+        /* Posição */
+        float: left;
+    }
+        #left{
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 100;
+            animation: dash 3s linear forwards;
+        }
+
+/* Header da seção um */
+.secOne header{
+    /* Dimensões */
+    width: 100%; height: 10vh;
+    /* Posição */
+    position: relative;
+}
+    .secOne header svg{
+        /* Posição */
+        margin: 5px 0px 0px 15px;
+        float: left;
+    }
+
+    .headerLinks{
+        /* Dimensões */
+        width: 23%;
+        /* Posição */
+        position: absolute;
+        top: 50%; right: -8%;
+        transform: translate(-50%, -50%);
+    }
+        .headerLinks a{
+            /* Posição */
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 10px;
+            /* Estilo */
+            font-size: 1.05em;
+            font-weight: 500;
+            text-decoration: none;
+            color: white;
+        }
+
+.secOneContent{
+    /* Dimensões */
+    width: 45%; height: auto;
+    /* Posição */
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    /* Estilo */
+    opacity: 0;
+    text-align: center;
+    /* Animação */
+    animation: appear 2s ease;
+    animation-fill-mode: forwards;
+}
+
+    .secOneContent h1{
+        /* Dimensões */
+        margin-bottom: 15px;
+        /* Estilo */
+        color: white;
+        font-size: 2.8em;
+        font-weight: 300;
+    }
+
+    .contentLine{
+        /* Posição */
+        position: relative;
+        left: 40%;
+        /* Dimensões */
+        width: 100px; height: 2px;
+        /* Estilo */
+        background: white;
+    }
+
+    .secOneContent h3{
+        /* Dimensões */
+        margin-top: 15px;
+        /* Estilo */
+        color: white;
+        font-size: 1.4em;
+    }
+
+@keyframes appear {
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes dash {
+    from{
+        stroke-dashoffset: 1000;
+    }
+    to{
+        stroke-dashoffset: 0;
+    }
+}
