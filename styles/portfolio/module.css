@@ -1,0 +1,100 @@
+/* 
+    Icons [Module]
+*/
+.ico {
+    display: block;
+    width: 20px; height: 20px;
+    cursor: pointer; 
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ico-notes { background-image: url("/images/notes.svg"); }
+.ico-github { background-image: url("/images/github.svg"); }
+.ico-linkedin { background-image: url("/images/linkedin.svg"); }
+
+/* 
+    Counter [Module]
+*/
+.counter {
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    float: left;
+}
+
+.counter.flipped {
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translateY(-50%);
+}
+
+.counter-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-content > li:first-child {
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+.counter-content > li span {
+    border: .5px dashed white;
+}
+
+.counter-content > li:last-child {
+    margin-top: 10px;
+    writing-mode: sideways-lr;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/* 
+    Title [Module]
+*/
+.title { width: 50%; text-transform: uppercase; }
+.title span { font-weight: lighter; }
+.title h2 { font-size: 1.6em; }
+
+/* 
+    Content [Module]
+*/
+.content {
+    position: relative;
+    top: 50px; left: 10%;
+}
+
+/* 
+    Text [Module]
+*/
+.text {
+    margin-top: 20px;
+    text-align: justify;
+    width: 45%;
+}
+
+/* 
+    Introduction [Style]
+*/
+.introduction-epigraph {
+    font-size: 1.3em;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+/* 
+    About me [Style]
+*/
+#about-me {
+    background-image: url("/images/About-me-bg.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cube { background-color: #0B0B0B; border-radius: 5px; }
+.cube::before { border: 2px solid #BDE7FF; border-radius: 5px; }
