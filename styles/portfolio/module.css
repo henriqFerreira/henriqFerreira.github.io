@@ -1,100 +1,57 @@
 /* 
-    Icons [Module]
+    Icons
 */
 .ico {
-    display: block;
     width: 20px; height: 20px;
-    cursor: pointer; 
+    display: inline-block;
     background-position: center;
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: contain;
 }
-
 .ico-notes { background-image: url("/images/notes.svg"); }
-.ico-github { background-image: url("/images/github.svg"); }
 .ico-linkedin { background-image: url("/images/linkedin.svg"); }
+.ico-github { background-image: url("/images/github.svg"); }
+.ico-arrow-down { background-image: url("/images/down-arrow-icon.svg"); }
+.ico-logo { background-image: url("/images/Hn.svg"); }
 
 /* 
-    Counter [Module]
+    Counter
 */
-.counter {
-    position: absolute;
-    top: 20%;
-    transform: translateY(-50%);
-    float: left;
+.counter > ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: lighter;
 }
 
-.counter.flipped {
+.counter > ul li:first-child { font-size: 3em; }
+.counter > ul li span { border: 1px dashed white; }
+.counter > ul li:last-child { font-weight: 300; font-size: 1.1em; writing-mode: sideways-lr; margin-top: 10px; }
+
+.l-c {
+    position: absolute;
+    top: calc(200px - 100px); left: 0;
+}
+
+.r-c {
     position: absolute;
     top: 50%; right: 0;
     transform: translateY(-50%);
 }
 
-.counter-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.counter-content > li:first-child {
-    font-size: 3em;
-    font-weight: lighter;
-}
-
-.counter-content > li span {
-    border: .5px dashed white;
-}
-
-.counter-content > li:last-child {
-    margin-top: 10px;
-    writing-mode: sideways-lr;
-    font-weight: normal;
+/* 
+    Title
+*/
+.title {
+    width: fit-content;
+    position: relative;
+    top: 80px; left: 10%;
     text-transform: uppercase;
 }
 
-/* 
-    Title [Module]
-*/
-.title { width: 50%; text-transform: uppercase; }
-.title span { font-weight: lighter; }
-.title h2 { font-size: 1.6em; }
+.title > span { font-weight: lighter; }
 
 /* 
-    Content [Module]
+    Content
 */
-.content {
-    position: relative;
-    top: 50px; left: 10%;
-}
-
-/* 
-    Text [Module]
-*/
-.text {
-    margin-top: 20px;
-    text-align: justify;
-    width: 45%;
-}
-
-/* 
-    Introduction [Style]
-*/
-.introduction-epigraph {
-    font-size: 1.3em;
-    font-style: italic;
-    font-weight: lighter;
-}
-
-/* 
-    About me [Style]
-*/
-#about-me {
-    background-image: url("/images/About-me-bg.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.cube { background-color: #0B0B0B; border-radius: 5px; }
-.cube::before { border: 2px solid #BDE7FF; border-radius: 5px; }
+.content { width: 100%; }

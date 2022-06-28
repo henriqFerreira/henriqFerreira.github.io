@@ -1,0 +1,68 @@
+@import url("/styles/portfolio/module.css");
+
+/* 
+    Introduction
+*/
+.introduction-title { font-weight: bold; }
+.introduction-epigraph { text-align: right; font-size: 1.3em; font-weight: lighter; }
+
+/* 
+    About me
+*/
+#about-me {
+    background-image: url("/images/About-me.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.about-me-text { text-align: justify; }
+
+.cube {
+    background-color: #0B0B0B;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.cube::before {
+    border: 2px solid #8ECAE6;
+    border-radius: 5px;
+}
+
+/* 
+    Knowledge
+*/
+.dropdown-top {
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #0B0B0B;
+}
+
+.dropdown > ul li {
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+
+.dropdown > ul li::before {
+    border-radius: 3px;
+    background-color: white;
+}
+
+.dropdown > ul li::after {
+    border-radius: 3px;
+    background-color: black;
+}
+
+/* 
+    Projects
+*/
+.project {
+    border-radius: 5px;
+    background-color: #0B0B0B;
+}
+
+.project::before {
+    border: 1px solid #8ECAE6;
+    border-radius: 5px;
+}
