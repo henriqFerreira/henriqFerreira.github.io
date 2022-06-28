@@ -3,8 +3,26 @@
 /* 
     Introduction
 */
-.introduction-title { font-weight: bold; }
-.introduction-epigraph { text-align: right; font-size: 1.3em; font-weight: lighter; }
+.introduction-title {
+    font-weight: bold;
+    animation: title 1s ease-out forwards;
+}
+.introduction-epigraph {
+    text-align: right;
+    font-size: 1.3em;
+    font-weight: lighter;
+    animation: epigraph 1s ease-out forwards;
+}
+
+@keyframes title {
+    from { left: -5%; opacity: 0; }
+    to { left: 0%; opacity: 1; }
+}
+
+@keyframes epigraph {
+    from { right: 0%; opacity: 0; }
+    to { right: 10%; opacity: 1; }
+}
 
 /* 
     About me
@@ -17,6 +35,16 @@
 }
 
 .about-me-text { text-align: justify; }
+
+.about-me-text p {
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+.cubes {
+    opacity: 0;
+    transition: all 1s ease-out;
+}
 
 .cube {
     background-color: #0B0B0B;
@@ -32,6 +60,11 @@
 /* 
     Knowledge
 */
+.dropdown {
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
 .dropdown-top {
     border: 1px solid white;
     border-radius: 5px;
@@ -60,6 +93,8 @@
 .project {
     border-radius: 5px;
     background-color: #0B0B0B;
+    opacity: 0;
+    transition: all 1s ease-out;
 }
 
 .project::before {

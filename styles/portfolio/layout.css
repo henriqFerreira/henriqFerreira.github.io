@@ -6,6 +6,7 @@
     top: 0; left: 0;
     width: 100%; height: 50px;
     z-index: 1;
+    animation: nav 1s ease-out forwards;
 }
 
 #nav > ul {
@@ -18,6 +19,11 @@
 }
 
 #nav > ul li { margin: 0 10px; }
+
+@keyframes nav {
+    from { top: -10%; opacity: 0; }
+    to { top: 0%; opacity: 1; }
+}
 
 /* 
     Introduction

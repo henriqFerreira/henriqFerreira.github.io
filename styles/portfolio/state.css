@@ -3,3 +3,4 @@
 }
 
 .is-marked { color: var(--is-marked); }
+.is-visible { opacity: 1 !important; }

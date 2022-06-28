@@ -19,6 +19,12 @@
 */
 .counter {
     height: 200px;
+    transition: all 1s ease-out;
+}
+
+.counter.observed {
+    opacity: 0;
+    transition: all 1s ease-out;
 }
 
 .counter > ul {
@@ -65,6 +71,12 @@
     position: absolute;
     top: 50%; right: 0;
     transform: translateY(-50%);
+    animation: counter-r-c 1s ease-out forwards;
+}
+
+@keyframes counter-r-c {
+    from { right: -5%; opacity: 0; }
+    to { right: 0%; opacity: 1; }
 }
 
 /* 
@@ -75,6 +87,8 @@
     position: relative;
     top: 80px; left: 10%;
     text-transform: uppercase;
+    opacity: 0;
+    transition: all 1s ease-out;
 }
 
 .title > span { font-weight: lighter; }
