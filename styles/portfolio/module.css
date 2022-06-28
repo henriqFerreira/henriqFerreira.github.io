@@ -17,16 +17,44 @@
 /* 
     Counter
 */
-.counter > ul{
+.counter {
+    height: 200px;
+}
+
+.counter > ul {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-weight: lighter;
 }
 
-.counter > ul li:first-child { font-size: 3em; }
-.counter > ul li span { border: 1px dashed white; }
-.counter > ul li:last-child { font-weight: 300; font-size: 1.1em; writing-mode: sideways-lr; margin-top: 10px; }
+.counter > ul li:first-child { font-weight: lighter; font-size: 3em; }
+/* .counter > ul li hr { display: inline-block; } */
+
+.counter > ul li:last-child {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-50%);
+}
+
+.counter > ul li:last-child p {
+    -webkit-transform: rotate(-90deg); /* Safari */
+    -moz-transform: rotate(-90deg); /* Firefox */
+    -ms-transform: rotate(-90deg); /* IE9 */
+    -o-transform: rotate(-90deg); /* Opera */
+    transform: rotate(-90deg);
+
+    -webkit-transform-origin: center right; /* Safari */
+    -moz-transform-origin: center right; /* Firefox */
+    -ms-transform-origin: center right; /* IE9 */
+    -o-transform-origin: center right; /* Opera */
+    transform-origin: center right;
+
+    /* Should be unset in IE9+ I think. */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
 
 .l-c {
     position: absolute;
