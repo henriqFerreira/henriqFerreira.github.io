@@ -1,6 +1,0 @@
-:root {
-    --is-marked: #BDE7FF;
-}
-
-.is-marked { color: var(--is-marked); }
-.is-visible { opacity: 1 !important; }
